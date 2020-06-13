@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qtquickcontrols2.conf</file>
+        <file>icons/sixr_icon.png</file>
+        <file>icons/Tick.png</file>
+        <file>icons/Wrong.png</file>
+    </qresource>
+    <qresource prefix="/View">
+        <file>MainView.qml</file>
+        <file>JogViewForm.qml</file>
+        <file>PositionViewForm.qml</file>
+        <file>TeachViewForm.qml</file>
+        <file>RightViewForm.qml</file>
+        <file>BottomViewForm.qml</file>
+        <file>MainViewForm.qml</file>
+        <file>Resource.qml</file>
+        <file>MButton.qml</file>
+        <file>MCheckbox.qml</file>
+        <file>MComboBox.qml</file>
+        <file>MFrame.qml</file>
+        <file>MLabel.qml</file>
+        <file>MItemdelegate.qml</file>
+        <file>MSpinbox.qml</file>
+        <file>MSwitchDelegate.qml</file>
+        <file>MTextField.qml</file>
+        <file>RunViewForm.qml</file>
+        <file>DryRunViewForm.qml</file>
+        <file>TeachPointViewForm.qml</file>
+        <file>IOMonitoringViewForm.qml</file>
+        <file>VelocityAccelerationViewForm.qml</file>
+        <file>ScoordinatesViewForm.qml</file>
+        <file>IOHandlingViewForm.qml</file>
+        <file>ServoParametersViewForm.qml</file>
+        <file>ScopeViewForm.qml</file>
+        <file>Web2Form.qml</file>
+        <file>codeEditor.HTML</file>
+        <file>CodeEditor.qml</file>
+        <file>CodeEditorWindow.qml</file>
+        <file>CodeEditorTabButton.qml</file>
+        <file>script.js</file>
+        <file>BreakViewForm.qml</file>
+        <file>Splash.qml</file>
+        <file>Popup.qml</file>
+        <file>CodeWindow.qml</file>
+        <file>KeyBoard.qml</file>
+    </qresource>
+</RCC>
