@@ -38,22 +38,19 @@
 int main(int argc, char *argv[])
 {
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-
     QApplication app(argc, argv);
-
-
     Controller *ctrl = Controller::getInstance();
-
     QQmlApplicationEngine engine;
-    ComboBoxModel combo;
 
-    QStringList tmp;
-    tmp << "1wer" << "jjuy2ju" << "mm3mm" << "4" << "5" << "6" << "7";
-    combo.setComboList(tmp);
+    //ComboBoxModel combo;
 
-    QQmlContext *ownContext = engine.rootContext();
-    ownContext->setContextProperty("myTeachPointModel", QVariant::fromValue(combo.comboList()));
-    ownContext->setContextProperty("myTeachFrameModel", QVariant::fromValue(combo.comboList()));
+//    QStringList tmp;
+//    tmp << "1wer" << "jjuy2ju" << "mm3mm" << "4" << "5" << "6" << "7";
+//    combo.setComboList(tmp);
+
+//    QQmlContext *ownContext = engine.rootContext();
+//    ownContext->setContextProperty("myTeachPointModel", QVariant::fromValue(combo.comboList()));
+//    ownContext->setContextProperty("myTeachFrameModel", QVariant::fromValue(combo.comboList()));
 
 
 //    QQmlContext *classContext = engine.rootContext();
@@ -83,16 +80,15 @@ int main(int argc, char *argv[])
     //qmlRegisterType<CustomPlotItem>("CustomPlot", 1, 0, "CustomPlotItem");
     //qmlRegisterType<QCustomPlot>("QCustomPlot", 1, 0, "QCustomPlot");
     //*******************************
-    teachpointviewmodel techpoint;
+//    teachpointviewmodel techpoint;
 
-    QObject *topLevel = engine.rootObjects().value(0);
-    QQuickWindow *Item = qobject_cast<QQuickWindow *>(topLevel);
+//    QObject *topLevel = engine.rootObjects().value(0);
+//    QQuickWindow *Item = qobject_cast<QQuickWindow *>(topLevel);
 
-    QObject::connect(&techpoint, SIGNAL(openPopUp(QVariant)), Item, SLOT(openPopUp(QVariant)));
+//    QObject::connect(&techpoint, SIGNAL(openPopUp(QVariant)), Item, SLOT(openPopUp(QVariant)));
 
     //QQmlApplicationEngine engine;
     engine.load(QUrl(QStringLiteral("qrc:/View/MainView.qml")));
-
     QQmlContext *ctxt = engine.rootContext();
     ctrl->ctxt = ctxt;
     ctrl->Initialize();
@@ -101,8 +97,6 @@ int main(int argc, char *argv[])
 //    ctrl->InitializeChartPoints();
     //    teachpointviewmodel::init();
     // ctxt->setContextProperty("TeachPointModel", QVariant::fromValue(ctrl->dataList));
-
-
     if (engine.rootObjects().isEmpty())
         return -1;
 
